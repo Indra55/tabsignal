@@ -1,0 +1,9 @@
+# Local Chrome Web Store drafts and generated assets; keep the hostable policy.
+/store/*
+!/store/PRIVACY_POLICY.html
+
+# Generated promo material. Keep only the README meme images.
+/promo/*
+!/promo/readme/
+/promo/readme/*
+!/promo/readme/*.jpg

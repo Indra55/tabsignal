@@ -61,14 +61,3 @@ the four supported sites.
 - A page reload clears the unread state. Closed or sleeping tabs cannot be
   monitored while they are not running.
 
-## Chrome Web Store files
-
-The `store/` folder contains the listing draft, screenshots, and package helper.
-Build the upload ZIP from the project root with:
-
-```sh
-python3 store/build_package.py
-```
-
-The privacy policy draft still needs the publisher name and support contact
-filled in and hosted at a public URL before store submission.
