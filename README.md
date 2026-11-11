@@ -52,6 +52,8 @@ send page data or settings to a server. The only declared extension permission
 is `storage`, used for your on-device preferences. Host access is limited to
 the four supported sites.
 
+Read the [full privacy policy](website/privacy-policy/index.html).
+
 ## Known limits, the season finale
 
 - A site redesign can move or rename its Stop control, which may need a selector
