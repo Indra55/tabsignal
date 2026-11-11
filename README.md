@@ -24,10 +24,15 @@ too.
 No build step. No account. No “connect your wallet” side quest.
 
 1. Download or clone this repository.
-2. Open `chrome://extensions` (or `brave://extensions`).
-3. Turn on **Developer mode**.
-4. Choose **Load unpacked** and select this folder.
-5. Reload your open AI tabs. The dots are now in the cinematic universe.
+2. In Chrome or Brave, open `chrome://extensions` (or `brave://extensions`),
+   turn on **Developer mode**, then choose **Load unpacked** and select this
+   folder.
+3. In Firefox, open `about:debugging`, choose **This Firefox**, then **Load
+   Temporary Add-on** and select this folder's `manifest.json`.
+4. Reload your open AI tabs. The dots are now in the cinematic universe.
+
+Firefox temporary add-ons are removed when Firefox closes. A signed Firefox
+release is required for an installation that persists between sessions.
 
 After changing the extension files, press **Reload** on the extensions page,
 then reload your AI tabs. Opening a new tab by itself does not reload the
@@ -36,9 +41,9 @@ extension.
 ## The control panel
 
 Click the TabSignal toolbar icon to toggle the master switch or each supported
-service separately. Changes apply right away and are saved in Chrome's local
-extension storage. The master switch pauses every site; turning it back on
-restores your individual choices.
+service separately. Changes apply right away and are saved in your browser's
+local extension storage. The master switch pauses every site; turning it back
+on restores your individual choices.
 
 ## Privacy, no plot twist
 
