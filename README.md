@@ -2,7 +2,7 @@
 
 **Four AI tabs are cooking. You have one brain cell left to check them all.**
 
-![The tab situation](promo/assets/overwhelmed.png)
+![The tab situation](promo/readme/overwhelmed.jpg)
 
 TabSignal puts a tiny status dot on the favicon for ChatGPT, Gemini, DeepSeek,
 and Grok. Keep doing literally anything else while the bots cook.
@@ -17,7 +17,7 @@ The dot sits over the existing favicon without resizing the logo. When you
 return to the tab, the blue “ready” state clears. Refreshing the page clears it
 too.
 
-![The cat has reviewed the workflow](promo/assets/cat-approval.png)
+![The cat has reviewed the workflow](promo/readme/cat-approval.jpg)
 
 ## Install it locally
 

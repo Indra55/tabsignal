@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "TabSignal",
+  "short_name": "TabSignal",
+  "version": "1.4.0",
+  "description": "Favicon status dots for ChatGPT, Gemini, DeepSeek and Grok. Grey while working, blue when ready. Toggle each site separately.",
+  "permissions": ["storage"],
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "TabSignal",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://chatgpt.com/*", "https://gemini.google.com/*", "https://chat.deepseek.com/*", "https://grok.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

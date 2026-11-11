@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TabSignal</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="popup.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <img src="icons/tabsignal.svg" width="32" height="32" alt="">
+      <div class="brand">
+        <h1>TabSignal</h1>
+        <p id="master-status" role="status">AI tab status</p>
+      </div>
+      <input id="master-enabled" data-setting="masterEnabled" type="checkbox" role="switch" aria-label="All indicators" aria-describedby="master-status" title="Turn all indicators on or off" disabled>
+    </header>
+
+    <main>
+      <div class="services">
+        <label class="control" for="chatgpt-enabled" title="ChatGPT">
+          <span class="service">
+            <img src="icons/chatgpt.svg" width="28" height="28" alt="">
+          </span>
+          <input id="chatgpt-enabled" data-setting="chatgptEnabled" type="checkbox" role="switch" aria-label="ChatGPT indicator" disabled>
+        </label>
+        <label class="control" for="gemini-enabled" title="Gemini">
+          <span class="service">
+            <img src="icons/gemini.png" width="28" height="28" alt="">
+          </span>
+          <input id="gemini-enabled" data-setting="geminiEnabled" type="checkbox" role="switch" aria-label="Gemini indicator" disabled>
+        </label>
+        <label class="control" for="deepseek-enabled" title="DeepSeek">
+          <span class="service">
+            <img src="icons/deepseek.svg" width="28" height="28" alt="">
+          </span>
+          <input id="deepseek-enabled" data-setting="deepseekEnabled" type="checkbox" role="switch" aria-label="DeepSeek indicator" disabled>
+        </label>
+        <label class="control" for="grok-enabled" title="Grok">
+          <span class="service">
+            <img src="icons/grok.svg" width="28" height="28" alt="">
+          </span>
+          <input id="grok-enabled" data-setting="grokEnabled" type="checkbox" role="switch" aria-label="Grok indicator" disabled>
+        </label>
+      </div>
+
+      <div class="guide">
+        <div class="guide-row">
+          <span class="dot working" aria-hidden="true"></span>
+          <span><strong>Working</strong><span>A blinking grey dot.</span></span>
+        </div>
+        <div class="guide-row">
+          <span class="dot ready" aria-hidden="true"></span>
+          <span><strong>Ready to read</strong><span>Blue until you return to the tab.</span></span>
+        </div>
+      </div>
+    </main>
+
+    <footer><span>Settings saved locally</span><span>v1.4.0</span></footer>
+  </body>
+</html>
