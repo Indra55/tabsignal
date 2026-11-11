@@ -1,6 +1,11 @@
-# Local Chrome Web Store drafts and generated assets; keep the hostable policy.
-/store/*
-!/store/PRIVACY_POLICY.html
+# Local Chrome Web Store drafts and generated assets.
+/store/
+
+# Keep only the nested, Vercel-ready privacy policy site.
+/website/*
+!/website/privacy-policy/
+/website/privacy-policy/*
+!/website/privacy-policy/index.html
 
 # Generated promo material. Keep only the README meme images.
 /promo/*
